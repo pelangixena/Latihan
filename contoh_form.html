@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Registrasi</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .centered-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  form {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="number"],
+  input[type="radio"],
+  input[type="checkbox"] {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .year-label {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="centered-text">
+  <h1>Form Registrasi</h1>
+</div>
+
+<form action="#" method="post">
+  <label for="nama">Nama:</label>
+  <input type="text" id="nama" name="nama">
+
+  <label for="kelas">Kelas:</label>
+  <input type="text" id="kelas" name="kelas">
+
+  <label for="tgl_lahir">Tgl Lahir:</label>
+  <input type="date" id="tgl_lahir" name="tgl_lahir">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+
+  <label for="umur">Umur:</label>
+  <input type="number" id="umur" name="umur">
+  <span class="year-label">tahun</span><br>
+
+  <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+  <input type="radio" id="laki_laki" name="jenis_kelamin" value="laki-laki">
+  <label for="laki_laki">Laki-laki</label>
+  <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+  <label for="perempuan">Perempuan</label><br>
+
+  <label for="hobi">Hobi:</label><br>
+  <input type="checkbox" id="hobi_olahraga" name="hobi[]" value="olahraga">
+  <label for="hobi_olahraga">Olahraga</label><br>
+  <input type="checkbox" id="hobi_membaca" name="hobi[]" value="membaca">
+  <label for="hobi_membaca">Membaca</label><br>
+  <input type="checkbox" id="hobi_musik" name="hobi[]" value="musik">
+  <label for="hobi_musik">Musik</label><br>
+  <input type="checkbox" id="hobi_menyanyi" name="hobi[]" value="menyanyi">
+  <label for="hobi_menyanyi">Menyanyi</label><br>
+  <input type="checkbox" id="hobi_melukis" name="hobi[]" value="melukis">
+  <label for="hobi_melukis">Melukis</label><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
